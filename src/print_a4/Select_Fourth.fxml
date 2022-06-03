@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="757.0" prefWidth="700.0" style="-fx-background-color: #55A9A9;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="print_a4.Select_FourthController">
+   <children>
+      <JFXButton fx:id="btnSave" focusTraversable="false" layoutX="249.0" layoutY="585.0" onAction="#btnSaveAction" prefHeight="39.0" prefWidth="184.0" style="-fx-background-color: #1E313F; -fx-background-radius: 50;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtItemNameAra" focusColor="#55a9a9" layoutX="216.0" layoutY="137.0" prefHeight="35.0" prefWidth="260.0" promptText="اسم المنتج" style="-fx-background-radius: 50; -fx-background-color: #ffffff22; -fx-text-fill: #fff;" unFocusColor="#55a9a9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemDesAra" focusColor="#55a9a9" layoutX="216.0" layoutY="199.0" prefHeight="35.0" prefWidth="260.0" promptText="الوصف" style="-fx-background-radius: 50; -fx-background-color: #ffffff22; -fx-text-fill: #fff;" unFocusColor="#55a9a9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" focusColor="#55a9a9" layoutX="220.0" layoutY="268.0" prefHeight="35.0" prefWidth="260.0" promptText="ITEM NAME" style="-fx-background-radius: 50; -fx-background-color: #ffffff22; -fx-text-fill: #fff;" unFocusColor="#55a9a9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDes" focusColor="#55a9a9" layoutX="220.0" layoutY="339.0" prefHeight="35.0" prefWidth="260.0" promptText="ITEM DESCRIPTION" style="-fx-background-radius: 50; -fx-background-color: #ffffff22; -fx-text-fill: #fff;" unFocusColor="#55a9a9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </JFXTextField>
+      <JFXTextField fx:id="txtOldPrice" focusColor="#55a9a9" layoutX="218.0" layoutY="401.0" prefHeight="35.0" prefWidth="124.0" promptText="Old Price" style="-fx-background-radius: 50; -fx-background-color: #ffffff22; -fx-text-fill: #fff;" unFocusColor="#55a9a9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </JFXTextField>
+      <JFXTextField fx:id="txtOldPoint" focusColor="#55a9a9" layoutX="359.0" layoutY="401.0" prefHeight="35.0" prefWidth="113.0" promptText="00" style="-fx-background-radius: 50; -fx-background-color: #ffffff22; -fx-text-fill: #fff;" unFocusColor="#55a9a9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </JFXTextField>
+      <JFXTextField fx:id="txtnewPrice" focusColor="#55a9a9" layoutX="220.0" layoutY="465.0" prefHeight="35.0" prefWidth="124.0" promptText="New Price" style="-fx-background-radius: 50; -fx-background-color: #ffffff22; -fx-text-fill: #fff;" unFocusColor="#55a9a9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </JFXTextField>
+      <JFXTextField fx:id="txtnewPricePoint" focusColor="#55a9a9" layoutX="361.0" layoutY="465.0" prefHeight="35.0" prefWidth="113.0" promptText="00" style="-fx-background-radius: 50; -fx-background-color: #ffffff22; -fx-text-fill: #fff;" unFocusColor="#55a9a9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="197.0" layoutY="60.0" prefHeight="55.0" prefWidth="307.0" text="Print A4 Paper 00002" textFill="WHITE">
+         <font>
+            <Font name="Andalus" size="34.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.65" specularConstant="1.6" specularExponent="12.09" surfaceScale="4.17">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <JFXCheckBox fx:id="cbxWhite" checkedColor="#0825ff" layoutX="224.0" layoutY="524.0" onAction="#cbxWhite" prefHeight="35.0" prefWidth="113.0" style="-fx-background-color: #ffffff22; -fx-border-color: #000;" text="White Paper" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="cbxYellow" checkedColor="#d5ff01" layoutX="361.0" layoutY="524.0" onAction="#cbxYellowAction" prefHeight="35.0" prefWidth="113.0" style="-fx-background-color: #ffffff22; -fx-border-color: #000;" text="Yellow Paper" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXCheckBox>
+   </children>
+</AnchorPane>

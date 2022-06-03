@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="757.0" prefWidth="700.0" style="-fx-background-color: #55A9A9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="print_a4.Select_ImageController">
+   <children>
+      <ScrollPane prefHeight="757.0" prefWidth="700.0" />
+      <AnchorPane prefHeight="757.0" prefWidth="700.0" style="-fx-background-color: #55A9A9;">
+         <children>
+            <BorderPane prefHeight="693.0" prefWidth="700.0">
+               <top>
+                  <ImageView fx:id="firstImage" fitHeight="211.0" fitWidth="190.0" onMouseClicked="#firstImageAction" onMouseEntered="#fEnter" onMouseExited="#fexit" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@1.jpeg" />
+                     </image>
+                  </ImageView>
+               </top>
+               <left>
+                  <ImageView fx:id="secondImage" fitHeight="222.0" fitWidth="166.0" onMouseClicked="#secondImageAction" onMouseEntered="#sEnter" onMouseExited="#sExit" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@2.jpeg" />
+                     </image>
+                  </ImageView>
+               </left>
+               <right>
+                  <ImageView fx:id="FourthImage" fitHeight="217.0" fitWidth="233.0" onMouseClicked="#FourthImageAction" onMouseEntered="#foEnter" onMouseExited="#foExit" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@4.jpeg" />
+                     </image>
+                  </ImageView>
+               </right>
+               <bottom>
+                  <ImageView fx:id="fifthImage" fitHeight="217.0" fitWidth="171.0" onKeyPressed="#fifthImageAction" onMouseClicked="#fifthImageAction" onMouseEntered="#fifthEnter" onMouseExited="#fifthExit" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@5.jpeg" />
+                     </image>
+                  </ImageView>
+               </bottom>
+               <center>
+                  <ImageView fx:id="ThirdImage" fitHeight="218.0" fitWidth="149.0" onMouseClicked="#ThirdImageAction" onMouseEntered="#tEnter" onMouseExited="#tExit" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@3.jpeg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <VBox prefHeight="200.0" prefWidth="213.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="216.0" text="Carrefour Manar Mall RAK1" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

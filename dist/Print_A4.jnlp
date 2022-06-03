@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Print_A4.jnlp">
+    <information>
+        <title>Print_A4</title>
+        <vendor>rashad</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="10.0.1+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="Print_A4.jar" size="229382" download="eager"/>
+        <jar href="lib\jfoenix.jar" size="2201031" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="print_a4.Print_A4" name="Print_A4"/>
+</jnlp>
+
